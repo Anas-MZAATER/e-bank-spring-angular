@@ -77,6 +77,11 @@ public class EbankBackendApplication {
         };
     }
 
+
+
+    /// show account infos with owner and operation infos mais il ne travail pas car
+    // le mode LAZY : charger à la demande
+    // mais non dans le main se fais dans la couche service avec @transaction
     @Bean
     CommandLineRunner commandLineRunner(BanckAccountRepo banckAccountRepo){
         return args -> {
